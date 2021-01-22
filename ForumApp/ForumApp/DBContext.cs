@@ -15,7 +15,6 @@ namespace ForumApp
         {
         }
 
-
         public List<HomeModel> GetUsers()
         {
     
