@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.5
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApp", "ForumApp\ForumApp.csproj", "{ABF17439-61CA-4E33-BDEF-D1D88DD78946}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForumApp.Tests", "ForumApp.Tests\ForumApp.Tests.csproj", "{F4E2E524-4158-45A8-8613-A34497A6D333}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABF17439-61CA-4E33-BDEF-D1D88DD78946}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF17439-61CA-4E33-BDEF-D1D88DD78946}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF17439-61CA-4E33-BDEF-D1D88DD78946}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF17439-61CA-4E33-BDEF-D1D88DD78946}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4E2E524-4158-45A8-8613-A34497A6D333}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4E2E524-4158-45A8-8613-A34497A6D333}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4E2E524-4158-45A8-8613-A34497A6D333}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4E2E524-4158-45A8-8613-A34497A6D333}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {927C1388-D371-496A-B7CA-2EF2F32DB81B}
+	EndGlobalSection
+EndGlobal

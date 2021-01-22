@@ -1,0 +1,63 @@
+﻿@model IEnumerable<ForumApp.Models.ForumModel>
+
+@{
+    ViewBag.Title = "Forum";
+    ViewBag.User = Session["user"];
+}
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        border-color:lightgray;
+    }
+
+        table.center {
+            margin-left: auto;
+            margin-right: auto;
+            width:300px;
+        }
+
+  div {
+      margin-bottom:5px;
+  }
+</style>
+
+<table class="center">
+    <tr>
+        <td>
+            <p>
+                @Html.ActionLink("New post", "Create")
+            </p>
+        </td>
+    </tr>
+    @foreach (var post in Model)
+    {
+<tr>
+    <td>
+        <div style="display: none;">
+            @Html.DisplayFor(x => post.Id)
+        </div>
+        <div style="font-weight: bold; font-size:medium; background-color:lightgrey">
+            @Html.DisplayFor(x => post.Title)
+        </div>
+        <div>
+            @Html.DisplayFor(x => post.FullDescription)
+        </div>
+        <div >
+            @Html.DisplayFor(x => post.CreationDate)
+        </div>
+        <div >
+            @Html.DisplayFor(x => post.User)
+        </div>
+        @if (post.User == ViewBag.User)
+        {
+            <div >
+            @Html.ActionLink("Edit", "Edit", new { Id = post.Id })
+            </div>
+        }
+        </td>
+    </tr>
+
+    }
+</table>  

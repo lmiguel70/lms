@@ -1,0 +1,47 @@
+﻿@model ForumApp.Models.HomeModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <div align="center">
+        @using (Html.BeginForm("", "Home", FormMethod.Post))
+        {
+            <div style="border: 2px solid lightgray;width: 300px">
+                <div>
+                    <h1> Login </h1>
+                </div>
+                <div>
+                    <label>User Name: </label>
+                    @Html.EditorFor(model => model.UserName)
+                </div>
+                <br />
+                <div>
+                    <label>Password: </label>
+                    @Html.EditorFor(model => model.Password)
+                </div>
+                <br />
+
+                <div align="center" style="margin-bottom:10px">
+                    <input type="submit" value="Login" name="action:Login" />
+                </div>
+            </div>
+        }
+
+        <div>
+            @if (ViewBag.Error != null)
+            {
+                <h3 style="color:red">@ViewBag.Error</h3>
+            }
+        </div>
+    </div>
+</body>
+</html>  

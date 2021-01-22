@@ -1,0 +1,37 @@
+﻿@model ForumApp.Models.ForumModel
+
+@{
+    ViewBag.Title = "Edit";
+}
+<div align="center">
+    @using (Html.BeginForm("Save", "Edit", FormMethod.Post))
+    {
+    <div style="border: 2px solid lightgray;width: 500px; padding-top:5px; padding-bottom:5px">
+
+        <div style="display: none;">
+            @Html.EditorFor(model => model.Id)
+            @Html.EditorFor(model => model.CreationDate)
+            @Html.EditorFor(model => model.User)
+        </div>
+
+        <table>
+            <tr>
+                <td><label>Title: </label></td>
+                <td>
+                    @Html.EditorFor(model => model.Title, new { style = "width:300px" })
+                </td>
+            </tr>
+            <tr>
+                <td style="vertical-align:top"><label style="">Full description: </label></td>
+                <td> @Html.TextAreaFor(model => model.FullDescription, new { style = "height:200px;width:300px" })</td>
+            </tr>
+        </table>
+        <br />
+        <span align="center">
+            <input type="submit" value="Save" name="Save" />
+            <input type="submit" value="Cancel" name="Cancel" />
+        </span>
+
+    </div>
+    }
+</div>
