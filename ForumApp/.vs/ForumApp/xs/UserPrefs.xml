@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{ABF17439-61CA-4E33-BDEF-D1D88DD78946}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="ForumApp/Views/Home/Edit.cshtml">
     <Files>
-      <File FileName="ForumApp/DBContext.cs" Line="16" Column="10" />
-      <File FileName="ForumApp/Views/Home/Edit.cshtml" Line="10" Column="1" />
+      <File FileName="ForumApp/Views/Home/Edit.cshtml" Line="36" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,10 +9,14 @@
           <Node name="ForumApp" expanded="True">
             <Node name="ForumApp" expanded="True">
               <Node name="References" expanded="True" />
+              <Node name="App_Start" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
                 <Node name="Home" expanded="True">
                   <Node name="Edit.cshtml" selected="True" />
                 </Node>
+                <Node name="Shared" expanded="True" />
               </Node>
             </Node>
           </Node>
